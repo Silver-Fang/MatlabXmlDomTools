@@ -1,0 +1,48 @@
+{
+	"ParseXmlStringToW3cDomDocument": {
+		"inputs": [
+			{
+				"name": "XmlString",
+				"kind": "required",
+				"type": [
+					"string",
+					"scalar"
+				],
+				"purpose": "要转换的XML字符串"
+			}
+		],
+		"outputs": [
+			{
+				"name": "W3cDomDocument",
+				"type": [
+					"scalar",
+					"org.w3c.dom.Document"
+				],
+				"purpose": "转换成的Java W3C DOM文档对象"
+			}
+		]
+	},
+	"ParseW3cDomDocumentToXmlString": {
+		"inputs": [
+			{
+				"name": "W3cDomDocument",
+				"kind": "required",
+				"type": [
+					"scalar",
+					"org.w3c.dom.Document"
+				],
+				"purpose": "要转换的Java W3C DOM文档对象"
+			}
+		],
+		"outputs": [
+			{
+				"name": "XmlString",
+				"type": [
+					"string",
+					"scalar"
+				],
+				"purpose": "转换成的XML字符串"
+			}
+		]
+	}
+}
